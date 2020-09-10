@@ -1,0 +1,68 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+
+<!--TopMenu-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tra Cứu Kho Sách</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nhập Sách</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Lập Phiếu Nhập Sách</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!--information-->
+<section id="Contact" class="content-section">
+    <div class="container">
+      <div class="block-heading">
+        <h2>Thông Tin Nhân Viên</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6" >
+              <img src="{{ url_for('static', filename='img/map.jpg') }}" alt="Slide" style="width:100%">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="form-wrap">
+            <form action="javascript:void(0)" method="post">
+              <div class="fname floating-label">
+                <input type="text" class="floating-input" name="full name" />
+                <label for="title">First Name</label>
+              </div>
+              <div class="fname floating-label">
+                <input type="text" class="floating-input" name="full name" />
+                <label for="title">Last Name</label>
+              </div>
+              <div class="email floating-label">
+                <input type="email" class="floating-input" name="email" />
+                <label for="email">Email</label>
+              </div>
+              <div class="contact floating-label">
+                <input type="tel" class="floating-input" name="contact" />
+                <label for="email">Mobile</label>
+              </div>
+              <div class="company floating-label">
+                <input type="date" class="floating-input" name="company" />
+                <label for="email">Ngày Sinh</label>
+              </div>
+              <div class="submit-btn">
+                <button type="submit">Cập Nhật</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock body %}
+
+
+<!--footer-->

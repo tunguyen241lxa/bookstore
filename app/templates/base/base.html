@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+	ustora by freshdesignweb.com
+	Twitter: https://twitter.com/freshdesignweb
+	URL: https://www.freshdesignweb.com/ustora/
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CaTu</title>
+
+      <!-- Google Fonts -->
+
+
+      <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Font Awesome -->
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/login-manager.css')}}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom-responsive-styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+
+<body id="page-top">
+{% block body %}
+{% endblock %}
+
+<footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="javascript:void(0)">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright © Your Website 2018</p>
+      <p class="text-muted small mb-0">Designed by <a href="https://www.position2.com/" target="_balnk"/>Position2</p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/all-plugins.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/plugins-activate.js') }}"></script>
+
+</body>
+</html>
